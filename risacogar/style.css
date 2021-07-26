@@ -1,0 +1,133 @@
+/* GENERAL */
+* { padding:0; margin:0; }
+
+body { font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#555; background:#e1e1e1; }
+.clr { clear:both; font-size:0; line-height:0; }
+img.imgRight { float:right; margin:0 0 10px 15px; padding:3px; border:1px solid #ccc; }
+img.imgLeft { float:left; margin:0 15px 10px 0; padding:3px; border:1px solid #ccc; }
+.nodisplay { display:none; }
+
+/* HEADINGS */
+h1 { font-size:18px; font-weight:bold; color:#003f87; margin-bottom:12px; }
+h2 { font-size:14px; font-weight:bold; color:#003f87; margin:3px 0 10px 0; }
+h2.sec { color:#333; } 
+h3 { font-size:13px; font-ueight:bold; color:#333; margin:0 0 10px 0; }
+
+/* TYPO */
+.light { color:#888; }
+.small { font-size:11px; }
+
+a, a:hover, a:visited { color:#003f87; text-decoration:underline; }
+
+/* PARAGRAPH */
+p { line-height:20px; padding-bottom:10px; }
+#left p { text-align:justify; }
+p.tel { background:url(/risacogar/images/icon_tel.gif) no-repeat 0 2px; padding:0 0 5px 23px; }
+p.fax { background:url(/risacogar/images/icon_fax.gif) no-repeat 0 2px; padding:0 0 5px 23px; }
+p.email { background:url(/risacogar/images/icon_email.gif) no-repeat 0 4px; padding:0 0 5px 23px; }
+
+/* SPACING */
+.pb0 { padding-bottom:0; } .pb5 { padding-bottom:5px; } .pb15 { padding-bottom:15px; }
+.pt0 { padding-top:0; } .pt5 { padding-top:5px; } .pt15 { padding-top:15px; }
+
+/* IMAGES */
+img { border:0; }
+img { behavior:url(iepngfix.htc); }
+
+/* LIST */
+ul { margin:0 0 5px 15px; }
+li { list-style:none; line-height:18px; padding:0 0 7px 12px; background:url(/risacogar/images/li.gif) no-repeat 0 6px; }
+
+/* TABLE */
+table { border-collapse:collapse; }
+td { vertical-align:top; }
+
+/* STRUCTURE */
+#container { width:800px; margin:0 auto; background:#fff url(/risacogar/images/bg.gif) top center repeat-y; padding:0 10px 5px 10px; }
+	#top { background:#0a50a1 url(/risacogar/images/bg_top.jpg) top right no-repeat; height:57px; padding-top:23px; }
+		#logo { float:left; width:200px; padding-left:20px; }
+		#language { color:#9fbddf; float:left; width:570px; text-align:right; padding:33px 10px 0 0; } 
+			#language a { color:#fff; text-decoration:none; }
+			#language a:hover { text-decoration:underline; }
+		
+	#nav { height:30px; background:#003f87; margin:0 0 15px 0; }
+		#nav ul { margin:0; padding:0; }
+		#nav ul li { margin:0; padding:0; display:inline; }
+		#nav ul li a { display:block; float:left; padding:0 15px; line-height:30px; height:30px; color:#9fbddf; text-decoration:none; font-weight:bold; }
+		#nav ul li.active a, #nav ul li.active a:hover { background:#002958; color:#fff; }
+		#nav ul li a:hover { background:#003572; color:#fff; }
+		
+	#banner { padding:0 15px 20px 15px; }
+	#main { padding:0 15px; }
+		#left { width:500px; margin-right:20px; float:left; border-top:5px solid #6a9dd7; padding-top:10px; height:300px; height:auto!important; min-height:300px; }
+			table#contacts { margin:0 0 15px; }
+			table#contacts td { width:auto; }
+			table#contacts td.col1 { padding-right:20px; width:auto; }
+			
+			.block1, .block2 { float:left; width:240px; margin-right:25px; border-top:5px solid #d6d6d6; padding-top:10px; }
+			.block2 { margin-right:0; }
+			p.blockHeading { font-weight:bold; color:#333; padding-bottom:5px; }
+			
+			div.seriesphotos { float:right; width:160px; padding:0 0 0 15px; }
+			div.seriesphotos img { margin:0 0 10px 0; padding:3px; border:1px solid #ccc; }
+			
+		#right { width:250px; float:left; border-top:5px solid #d6d6d6; padding-top:10px; }
+			#subnav {}
+			#subnav ul { margin:0; padding:0; }
+			#subnav ul li { margin:0; padding:0; background:none; }
+			#subnav ul li a { display:block; padding:6px 20px; width:210px; border-bottom:1px solid #d6d6d6; text-decoration:none; color:#003f87; }
+			#subnav ul li a:hover { text-decoration:underline; }
+			#subnav ul li.active a { font-weight:bold; background:url(/risacogar/images/arrow_dblue.gif) no-repeat 10px 12px; }
+			
+			#subnav li ul li a, #subnav li.active ul li a { font-weight:normal; background:none; width:195px; padding-left:35px; font-size:11px; }
+			#subnav li ul li.active a { font-weight:bold; background:url(/risacogar/images/arrow_dblue.gif) no-repeat 25px 12px;}
+		
+	#footer { text-align:center; background:#e1e1e1; padding:8px 0; margin:30px 15px 15px 15px; }
+	#footer a { color:#555; text-decoration:none; }
+	#footer a:hover { text-decoration:underline; }
+
+/* CONTACT FORM */
+table.formTable { margin-bottom:10px; }
+table.formTable td { padding:0 0 5px 0; }
+table.formTable td.col1 { padding-right:10px; width:90px; }
+
+form#contactForm {}
+form#contactForm input.box { width:200px; }
+	form#contactForm input.upload { width:220px!important; }
+	form#contactForm textarea { width:300px; height:120px; }
+	form#contactForm input.box, table.formTable textarea { border:1px solid #ccc; padding:3px; }
+	
+span.required { color:#f00; }	
+span.errmsg { color:#f00; margin:0 0 0 7px; }
+div.successful { background:#D4E5FF; border:1px solid #06f; color:#06f; padding:7px; text-align:center; line-height:16px; }
+div.error { background:#FFE7E7; border:1px solid #FF6D6D; color:#f00; padding:7px; text-align:center; line-height:16px; margin-bottom:15px; }
+
+/* LIVE VALIDATION */
+.LV_valid { color:#090; }				
+.LV_invalid { color:#f00; }
+	
+.LV_validation_message{ margin:0 0 0 7px; }
+	
+.LV_valid_field,
+input.LV_valid_field:hover, 
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover, 
+textarea.LV_valid_field:active,
+.fieldWithErrors input.LV_valid_field,
+.fieldWithErrors textarea.LV_valid_field {
+	/* border: 1px solid #090!important; */
+}
+
+.LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active,
+.fieldWithErrors input.LV_invalid_field,
+.fieldWithErrors textarea.LV_invalid_field,
+form#contactForm p.err input,
+form#contactForm p.err textarea {
+	border:1px solid #FF6D6D!important; background:#FFE7E7;
+}
+
+/* opacity:0.7; filter:alpha(opacity=50); */
